@@ -35,6 +35,7 @@ def create_file(file_path: str) -> None:
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Arguments Error!")
+        sys.exit(1)
 
     if "-d" in sys.argv:
         dir_parts = sys.argv[sys.argv.index("-d") + 1:]
